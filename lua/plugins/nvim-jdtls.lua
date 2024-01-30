@@ -1,7 +1,7 @@
 return {
   "mfussenegger/nvim-jdtls",
-  opts = function()
-    return {
+  opts = {
+    jdtls = {
       settings = {
         java = {
           configuration = {
@@ -12,12 +12,12 @@ return {
               },
               {
                 name = "JavaSE-17",
-                path = "/usr/lib/jvm/java-17-openjdk/",
+                path = "/usr/lib/jvm/jre-17-openjdk/",
               },
             },
           },
         },
       },
-    }
-  end,
+    },
+  },
 }
